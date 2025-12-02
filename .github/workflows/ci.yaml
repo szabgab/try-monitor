@@ -22,7 +22,7 @@ jobs:
         with:
           config: sites/code-maven.com.yaml sites/szabgab.com.yaml
 
-      # Pass wilde-card should also work
+      # Pass wild-card should also work
       - uses: szabgab/monitor@main
         with:
           config: sites/*.yaml
