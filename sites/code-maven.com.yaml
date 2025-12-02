@@ -1,0 +1,23 @@
+sites:
+  - mx: code-maven.com
+    ips:
+      - mx1.forwardemail.net.
+      - mx2.forwardemail.net.
+
+  - host: code-maven.com
+    ips: github
+
+  - host: academy.code-maven.com
+    ips:
+      - 173.255.196.65
+
+  - url: https://code-maven.com/
+    status_code: 200
+    html_contains: "Welcome to the Code Maven!"
+
+  - url: http://code-maven.com/
+    status_code: 301
+    headers:
+       Location: https://code-maven.com/
+
+
