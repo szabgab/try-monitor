@@ -17,8 +17,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
+      # Pass the name of the individual config files
       - uses: szabgab/monitor@main
         with:
-          config: sites/code-maven.com.yaml
+          config: sites/code-maven.com.yaml sites/szabgab.com.yaml
+
+      # Pass wilde-card should also work
+      - uses: szabgab/monitor@main
+        with:
+          config: sites/*.yaml
 
 

@@ -1,0 +1,9 @@
+sites:
+  - host: szabgab.com
+    ips: github
+
+  - host: old.szabgab.com
+    enabled: false
+    ips:
+      - 104.248.229.11
+
